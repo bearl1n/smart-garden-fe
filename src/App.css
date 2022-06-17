@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 250px;
+  margin: 50px auto;
 }
 
 .App-logo {
@@ -28,6 +30,12 @@
   color: #61dafb;
 }
 
+.loginform {
+  margin: auto;
+  padding: inherit;
+  position: relative;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +43,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App .MuiFormControl{
+  width: 100%;
+  margin: 15px 0px;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+}
+.App .buttons .MuiButton-root {
+  width: 99%;
+}
+.App .MuiFormControl-root {
+  width: 100%;
+  margin: 5px 0;
+}
+.App .buttons .log {
+  float: left;
+  width: 100%;
+}
+.App .buttons .reg {
+  float: right;
+  width: 100%;
 }
