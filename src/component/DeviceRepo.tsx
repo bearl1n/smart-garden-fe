@@ -11,7 +11,6 @@ export function DeviceRepo(props: DeviceProps) {
     console.log(props.device?.relayList?.toString())
 
     const [details, setDetails] = useState(false)
-
     const btnBgClassName = details ? 'bg-yellow-400' : 'bg-blue-400'
     const btnClasses = ['py-2 px-4 border', btnBgClassName]
 
