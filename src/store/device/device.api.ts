@@ -59,4 +59,5 @@ export const deviceApi = apiSlice.injectEndpoints({
     })
 })
 
-export const {useFetchDeviceQuery, useFetchOrdersDevicesRelayQuery, useCreateOrdersDevicesRelayMutation} = deviceApi
+export const {useFetchDeviceQuery, useLazyFetchDeviceQuery, useFetchOrdersDevicesRelayQuery,
+    useCreateOrdersDevicesRelayMutation, useAddDeviceUserLinkMutation} = deviceApi

@@ -1,6 +1,7 @@
 import {IDevice} from "../models/models";
 import {useState} from "react";
 import {RelayRepo} from "./RelayRepo";
+import {Card} from "antd";
 
 
 interface DeviceProps {
@@ -16,7 +17,7 @@ export function DeviceRepo(props: DeviceProps) {
 
     return (
         <div className={"border py-2 px-4 rounded flex flex-col items-center mb-2"}>
-            <h3>Device Name: {props.device.deviceName}</h3>
+            <Card title={props.device.deviceName}>
             <h6>type:</h6> <span> {props.device.deviceType}</span>
             <h6>serial number: {props.device.serialNumber}</h6>
             <h6>mqtt topic: {props.device.inTopicName}</h6>
@@ -34,6 +35,7 @@ export function DeviceRepo(props: DeviceProps) {
                     }
                 </p>
             </div>}
+            </Card>
         </div>
 
 

@@ -4,9 +4,9 @@ import {RootState} from "../index";
 const LOCAL_STORAGE_AUTH= 'USER_AUTH'
 
 export interface AuthState {
-    user: string ;
-    token: string ;
-    refreshToken: string;
+    user: string
+    token: string
+    refreshToken: string
 }
 
 const initialState: AuthState = JSON.parse(localStorage.getItem(LOCAL_STORAGE_AUTH) ?? '{}')

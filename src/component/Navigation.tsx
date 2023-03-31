@@ -3,12 +3,9 @@ import {Link} from "react-router-dom";
 
 export function Navigation() {
     return (
-        <nav className={"flex justify-between items-center h-[50px] px-5 bg-gray-500 text-white"}>
-            <h3 className={"font-bold"}> Smart Garden</h3>
-
-            <span><Link to={"/"} className={"mr-2"}>Home</Link> </span>
-            <span><Link to={"/dashboard"}>DashBoard</Link></span>
-
+        <nav className={"flex justify-end items-center  h-[30px] px-3 bg-gray-900 text-white"}>
+                <span><Link to={"/"} className={"mr-3"}>Home</Link> </span>
+                <span><Link to={"/dashboard"}>DashBoard</Link></span>
         </nav>
     )
 }
