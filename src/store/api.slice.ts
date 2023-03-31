@@ -4,7 +4,7 @@ import {RootState} from "./index";
 
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'http://localhost:8080',
+    baseUrl: 'http://62.217.180.135:8080',
     credentials: 'include',
     prepareHeaders: (headers, {getState}) => {
         const token = (getState() as RootState).auth.token;
